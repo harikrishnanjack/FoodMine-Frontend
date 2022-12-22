@@ -1,0 +1,24 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-titles',
+  templateUrl: './titles.component.html',
+  styleUrls: ['./titles.component.css']
+})
+export class TitlesComponent implements OnInit {
+
+  @Input()
+  title!: string;
+
+  @Input()
+  margin? = '1rem 0 1rem 0.2rem';
+
+  @Input()
+  fontSize? = '1.7rem';
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
